@@ -1,3 +1,3 @@
 output "permission_set_arn" {
-  value = aws_iam_permission_set.permission_set.id
+  value = aws_ssoadmin_permission_set.permission_set.id
 }
