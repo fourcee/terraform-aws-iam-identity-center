@@ -13,7 +13,7 @@ variable "account_id" {
   description = "AWS account ID"
 }
 
-variable "groups" {
+variable "group_names" {
   type        = list(string)
   description = "List of groups to assign to the permission set"
 }
