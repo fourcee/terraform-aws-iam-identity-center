@@ -1,6 +1,6 @@
 data "aws_identitystore_group" "groups" {
   for_each          = toset(var.group_names)
-  identity_store_id = split("/", provider::aws::arn_parse(var.identity_center_instance_arn).resource)[1]
+  identity_store_id = var.identity_store_id
 
   alternate_identifier {
     unique_attribute {

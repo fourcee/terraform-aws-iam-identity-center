@@ -3,6 +3,11 @@ variable "identity_center_instance_arn" {
   description = "ARN of the IAM Identity Center instance"
 }
 
+variable "identity_store_id" {
+  type        = string
+  description = "Identity store ID"
+}
+
 variable "permission_set_arn" {
   type        = string
   description = "ARN of the IAM Identity Center permission set"
