@@ -22,4 +22,12 @@ variable "session_duration" {
 variable "inline_policy" {
   type        = string
   description = "Inline IAM policy document"
+  default     = null
+  nullable    = true
+}
+
+variable "managed_policy_arns" {
+  type        = list(string)
+  description = "List of managed policy ARNs"
+  default     = []
 }
